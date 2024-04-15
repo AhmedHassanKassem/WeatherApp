@@ -1,0 +1,128 @@
+hr{
+    color: white;
+    width: 550px;
+}
+
+.bigImg{
+    width: 90px;
+    height: 60px;
+}
+.pollNum {
+    content: '0';
+    font-size: 200px;
+    font-weight: 400;
+    animation: countUp 2s infinite alternate;
+    
+  }
+@keyframes slideLeft {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .stateImg.slide {
+    width: 250px;
+    height: 230px;
+  overflow: hidden;
+    transform: translateY(-50%);
+  
+    opacity: 0; 
+    animation: slideLeft 3s forwards;
+  }
+
+  .col-md-6{
+    overflow: hidden;
+  }
+
+  .poll {
+    opacity: 0;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 20px;
+    animation: slideInFromBottom 8s forwards;
+  }
+
+  .pollCard{
+    
+     margin-right: 20px;
+    
+  }
+  
+  @keyframes slideInFromBottom {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .stateImg{
+      width: 150px;
+      height: 70px;
+     }
+     #dayName{
+      font-size: 12px;
+     }
+     #cityButton > a > .text-white{
+      font-size: 12px;
+      
+     }
+  }
+  
+
+  @media screen and (min-width:414px) and (max-width:890px) {
+   .stateImg{
+    display: none;
+   }
+   #dayName{
+    font-size: 12px;
+   }
+   #cityButton > a > .text-white{
+    font-size: 12px;
+    
+   }
+   nav{
+    display: block;
+   }
+   #pollCard{
+    padding: 0;
+    margin-top: 0;
+   }
+   .poll{
+    padding: 0;
+   }
+   .nav-item{
+   margin: 0;
+   
+   }
+  } 
+  @media screen and (min-width:375px) and (max-width:670px) {
+   .stateImg{
+    display: none;
+   }
+   #dayName{
+    font-size: 12px;
+   }
+   #cityButton > a {
+    padding: 0;
+    margin: 0;
+    
+   }
+ 
+   /* #langButton{
+    margin-left: 200px;
+    position: relative;
+    left: 330px; 
+    bottom: 35px;
+   } */
+  } 
+  
+  
