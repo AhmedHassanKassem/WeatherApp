@@ -15,7 +15,7 @@ import { Provider } from 'react-redux';
 
 
 function App() {
-  const { currentUser } = useAuth();
+  // const { currentUser } = useAuth();
   return (
   
     <div className="App">  
@@ -25,11 +25,17 @@ function App() {
     <Navbar />
     <Toaster position="top-right" />
     <Routes>
-      <Route path="/WeatherApp" exact element={currentUser ? <Home /> : <Navigate to="/WeatherApp/login" replace />} />
+      {/* <Route path="/WeatherApp" exact element={currentUser ? <Home /> : <Navigate to="/WeatherApp/login" replace />} />
       <Route path="/WeatherApp/login" exact element={currentUser ? <Navigate to="/WeatherApp/home" replace /> : <Login />} />
       <Route path="/WeatherApp/register" exact element={<Register/>}/>
       <Route path="/WeatherApp/home" exact element={currentUser ? <Home /> : <Navigate to="/WeatherApp/login" replace />} />
-      <Route path="/WeatherApp/mapInfo" exact element={currentUser ? <MapInfo /> : <Navigate to="/WeatherApp/login" replace />}  /> 
+      <Route path="/WeatherApp/mapInfo" exact element={currentUser ? <MapInfo /> : <Navigate to="/WeatherApp/login" replace />}  />  */}
+
+      <Route path="/WeatherApp" exact element={<Home/>} />
+      <Route path="/WeatherApp/login" exact element={<Home/>} />
+      <Route path="/WeatherApp/register" exact element={<Register/>}/>
+      <Route path="/WeatherApp/home" exact element={<Home/>}/>
+      <Route path="/WeatherApp/mapInfo" exact element={<Home/>}  /> 
     </Routes>
 
   </Provider>
