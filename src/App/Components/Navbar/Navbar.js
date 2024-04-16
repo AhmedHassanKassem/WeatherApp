@@ -55,7 +55,7 @@ const Navbar = () => {
   return (
     <><nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
-        <Link Link to={'/WeatherApp/home'} className="nav-link d-flex"><img src='../Weather-No-Background.png' /><p className='m-2'>{t('Weather App')}</p></Link>
+        <Link Link to='/WeatherApp/home' className="nav-link d-flex"><img src='../Weather-No-Background.png' /><p className='m-2'>{t('Weather App')}</p></Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -63,16 +63,16 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link to={'/WeatherApp/home'} onClick={handleNavClick} className="nav-link">{t('home')}</Link>
+              <Link to='/WeatherApp/home' onClick={handleNavClick} className="nav-link">{t('home')}</Link>
             </li>
             <li className="nav-item">
-              <Link to={'/WeatherApp/mapInfo'} onClick={handleNavClick}  className="nav-link">{t('MapInfo')}</Link>
+              <Link to='/WeatherApp/mapInfo' onClick={handleNavClick}  className="nav-link">{t('MapInfo')}</Link>
             </li>
             <li className="nav-item">
-              <Link to={'/WeatherApp/register'} className="nav-link">{t('Register')}</Link>
+              <Link to='/WeatherApp/register' className="nav-link">{t('Register')}</Link>
             </li>
             <li className="nav-item">
-              <Link to={'/WeatherApp/login'} className="nav-link" hidden={email}>{t('Login')}</Link>
+              <Link to='/WeatherApp/login' className="nav-link" hidden={email}>{t('Login')}</Link>
             </li>
             <li className="nav-item mt-2">
             <div id='langButton '>
